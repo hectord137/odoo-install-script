@@ -4,6 +4,7 @@ cd /home/ubuntu
 rm -frd ./*
 mkdir -p /home/ubuntu/odoo-config
 mkdir -p /home/ubuntu/extra-addons
+mkdir -p /var/lib/odoo-web-data
 mkdir -p /home/ubuntu/nginx-data
 mkdir -p /home/ubuntu/nginx-data/ssl
 mkdir -p /home/ubuntu/nginx-data/logs
