@@ -10,6 +10,7 @@ mkdir -p /home/ubuntu/nginx-data/logs
 mkdir -p /home/ubuntu/postgre-data
 
 cd /home/ubuntu/extra-addons
+rm -frd ./
 curl -o master.zip -sSL https://github.com/hectord137/odoo-addons/archive/master.zip
 sudo apt-get install -y unzip
 unzip -o master.zip
@@ -43,4 +44,3 @@ aws s3 cp s3://odoo-conf/docker-compose.yml ./
 docker-compose up -d
 docker-compose exec web pip3 install paramiko
 docker-compose restart
-
