@@ -10,7 +10,7 @@ mkdir -p /home/ubuntu/nginx-data/logs
 mkdir -p /home/ubuntu/postgre-data
 
 cd /home/ubuntu/extra-addons
-rm -frd ./
+rm -frd ./*
 curl -o master.zip -sSL https://github.com/hectord137/odoo-addons/archive/master.zip
 sudo apt-get install -y unzip
 unzip -o master.zip
