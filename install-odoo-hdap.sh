@@ -1,7 +1,7 @@
 #!/bin/sh
 
 cd /home/ubuntu
-rm -frd ./*
+#rm -frd ./*
 mkdir -p /home/ubuntu/odoo-config
 mkdir -p /home/ubuntu/extra-addons
 mkdir -p /home/ubuntu/nginx-data
@@ -38,5 +38,6 @@ cd /home/ubuntu/nginx-data/ssl
 
 cd /home/ubuntu
 aws s3 cp s3://odoo-conf/docker-compose.yml ./
-docker-compose rm -f -s -v
-docker-compose up -d --force-recreate
+#docker-compose rm -f -s -v
+#docker-compose up -d --force-recreate
+docker-compose up -d
