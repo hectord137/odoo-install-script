@@ -41,3 +41,6 @@ aws s3 cp s3://odoo-conf/docker-compose.yml ./
 #docker-compose rm -f -s -v
 #docker-compose up -d --force-recreate
 docker-compose up -d
+docker-compose exec web pip3 install paramiko
+docker-compose restart
+
