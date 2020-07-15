@@ -7,6 +7,7 @@ mkdir -p /home/ubuntu/extra-addons
 mkdir -p /home/ubuntu/nginx-data
 mkdir -p /home/ubuntu/nginx-data/ssl
 mkdir -p /home/ubuntu/nginx-data/logs
+mkdir -p /home/ubuntu/postgre-data
 
 cd /home/ubuntu/extra-addons
 curl -o master.zip -sSL https://github.com/hectord137/odoo-addons/archive/master.zip
